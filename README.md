@@ -1,5 +1,5 @@
 # Description
-This file will allow you to create gradients with unlimited color stops, and to pull colors from values within the gradient range.
+This is a simple library that will allow you to create gradients with unlimited color stops, and to pull colors from values within the gradient range.
 
 # Usage
 Include gradient-min.js locally or through

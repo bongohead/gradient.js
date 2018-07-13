@@ -14,9 +14,11 @@ Include gradient-min.js locally or through
 
 First create a gradient map variable using the function `gradient.create(arrayOfStops,arrayofColors,inputColorType)`.
 
-**The first parameter of `gradient.create()` should be the array of values which correspond to color stops. These must be in increasing order including any negative values e.g. `[-10,-5,.5,100,200]`.</br>
-The second parameter is the array of colors assigned to each stop.</br>
-The third parameter the format of the colors given in the previous parameter. Possible values include 'hex', 'htmlcolor', 'rgb', and 'rgba'.**
+The first parameter of `gradient.create()` should be the array of values which correspond to color stops. These must be in increasing order including any negative values e.g. `[-10,-5,.5,100,200]`.
+
+The second parameter is the array of colors assigned to each stop.
+
+The third parameter the format of the colors given in the previous parameter. Possible values include 'hex', 'htmlcolor', 'rgb', and 'rgba'.
 
 ```javascript
 var grMap = gradient.create(
@@ -27,7 +29,7 @@ var grMap = gradient.create(
 ```
 You can then calculate colors the gradient resolves to at specific values. Use the function `gradient.valToColor(value,gradientMap,'outputColorType')`.
 
-**Possible values for the third parameter of `gradient.valToColor` include 'hex', 'rgb', and 'rgba'.**
+Possible values for the third parameter of `gradient.valToColor` include 'hex', 'rgb', and 'rgba'.
 
 ```javascript
 gradient.valToColor(0,grMap,'rgb'); //returns rgb(255,255,255)

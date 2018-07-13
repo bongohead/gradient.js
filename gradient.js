@@ -7,8 +7,7 @@ var gradient = {
 		if (arrayOfStops.length < 2) throw new Error('Must contain at least two stops to create gradient!');
 		if (['hex','rgb','rgba','htmlcolor'].indexOf(inputColorType) === -1) throw new Error('inputColorType must be "hex", "rgb", or "rgba"');
 		
-		
-		for (i=0;i<arrayOfStops.length-1;i++) {
+		for (var i=0;i<arrayOfStops.length-1;i++) {
 			var startColor = arrayOfColors[i];
 			var endColor = arrayOfColors[i+1];
 
@@ -22,7 +21,6 @@ var gradient = {
 				startColor = this.htmlColorToRgba(startColor);
 				endColor = this.htmlColorToRgba(endColor);
 			}
-			
 			mapObj.push({
 				'start': arrayOfStops[i],
 				'end': arrayOfStops[i+1],
@@ -40,7 +38,7 @@ var gradient = {
 		var outputColorType = outputColorType || 'rgba';
 		if (['hex','rgb','rgba'].indexOf(outputColorType) === -1) throw new Error('outputColorType must be "hex", "rgb", or "rgba"');
 		
-		for (i=0;i<mapObj.length;i++) {
+		for (var i=0;i<mapObj.length;i++) {
 			if ( val < mapObj[i].start || val > mapObj[i].end) continue;
 
 			var matchingRow = mapObj[i];
@@ -61,7 +59,7 @@ var gradient = {
 		startColor = this.splitRgba(startColor);
 		endColor = this.splitRgba(endColor);
 				
-		for(i=0;i<=2;i++) {
+		for(var i=0;i<=2;i++) {
 		  rgbaArr[i] = parseInt( ((endColor[i] - startColor[i]) * norm).toFixed(0)) + startColor[i];
 		}
 		rgbaArr[3] = parseFloat( ((endColor[3] - startColor[3]) * norm + startColor[3]).toFixed(2) );
@@ -98,14 +96,12 @@ var gradient = {
 	
 	rgbToRgba: function(rgb) {
 		var rgbArr = rgb.replace(/[^\d,.-]/g, '').split(',');
-		
 		if (rgbArr.length !== 3) throw new Error('RGB not 3 elements');
-		for (i=0;i<=2;i++) {
+		for (var i=0;i<=2;i++) {
 			if (rgbArr[i] < 0 || rgbArr[i] > 255) throw new Error('RGB value not between 0 and 255: ' + rgb);
 			rgbArr[i] = parseInt(rgbArr[i]);
 		}
 		rgbArr.push(1.0);
-		
 		return this.joinRgba(rgbArr);
 	},
 	

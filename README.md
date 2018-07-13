@@ -10,6 +10,8 @@ Include gradient-min.js locally or through
 
 # Examples
 
+Also on https://jsbin.com/qeqiqujaro/edit?html,js,output
+
 ### Example 1: 2-color gradient with stops at 0 to 100
 
 First create a gradient map variable using the function `gradient.create(arrayOfStops,arrayofColors,inputColorType)`.

@@ -24,7 +24,7 @@ Calculate colors the gradient resolves to at specific values:
 ```javascript
 gradient.valToColor(0,grMap,'rgb'); //returns rgb(255,255,255)
 gradient.valToColor(50,grMap,'rgba'); //returns rgba(217,236,255,1)
-gradient.valToColor(50,grMap,'hex')'; //returns #d9ecff
+gradient.valToColor(50,grMap,'hex'); //returns #d9ecff
 ```
 Draw out the gradient:
 ```

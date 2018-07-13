@@ -9,19 +9,22 @@ Include gradient-min.js locally or through
 
 
 ### Example 1 - 2-color gradient with stops at 0 to 100
+Create gradient map and store it in grMap variable. The first parameter of gradient.create should be an array of values where the gradient changes color (in increasing order), the second parameter the array of colors, and the third parameter the format of the colors of the previous parameter. Possible values for the third parameter include 'hex', 'rgb', and 'rgba'.
 ```
-//Create gradient map and store it in grMap variable
 var grMap = gradient.create(
   [0,100],
   ['#fff','#b3d9ff'],
   'hex'
 );
-//Calculate colors the gradient resolves to at specific values
-testdiv.innerHTML += '<ol><li>Get the color at 0 in RGB: ' + gradient.valToColor(0,grMap,'rgb')+ '</li>' +
-                     '<li>Get the color at 50 in RGBA: ' + gradient.valToColor(50,grMap,'rgba')+ '</li>' +
-                     '<li>Get the color at 90 in Hex: ' + gradient.valToColor(50,grMap,'hex')+ '</li></ol>';
-
-testdiv.innerHTML += '<span>Draw the full gradient:</span>';
+```
+Calculate colors the gradient resolves to at specific values:
+```
+gradient.valToColor(0,grMap,'rgb'); //returns rgb(255,255,255)
+gradient.valToColor(50,grMap,'rgba'); //returns rgba(217,236,255,1)
+gradient.valToColor(50,grMap,'hex')'; //returns #d9ecff
+```
+Draw out the gradient:
+```
 for (var i=0;i<100;i+=2) {
   var color = gradient.valToColor(i,grMap,'hex');
   testdiv.innerHTML += '<div style="width:100%;height:3px;background-color:' + color + '"></div>';

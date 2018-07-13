@@ -6,8 +6,10 @@ Include gradient-min.js locally or through
 ```
   <script src="https://rawgit.com/cye131/gradient.js/master/gradient-min.js"></script>
 ```
+
 ---
-#Examples
+
+# Examples
 
 ## Example 1: 2-color gradient with stops at 0 to 100
 Create gradient map and store it in grMap variable.

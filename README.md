@@ -21,13 +21,13 @@ var grMap = gradient.create(
   'hex'
 );
 ```
-Calculate colors the gradient resolves to at specific values:
+Calculating colors the gradient resolves to at specific values:
 ```javascript
 gradient.valToColor(0,grMap,'rgb'); //returns rgb(255,255,255)
 gradient.valToColor(50,grMap,'rgba'); //returns rgba(217,236,255,1)
 gradient.valToColor(50,grMap,'hex'); //returns #d9ecff
 ```
-Draw out the gradient:
+Drawing the gradient:
 ```javascript
 for (var i=0;i<100;i+=2) {
   var color = gradient.valToColor(i,grMap,'hex');
@@ -48,13 +48,13 @@ var grMap = gradient.create(
   'htmlcolor'
 );
 ```
-Calculate colors the gradient resolves to at specific values:
+Calculating colors the gradient resolves to at specific values:
 ```javascript
 gradient.valToColor(-13,grMap,'rgb'); //returns rgb(107,172,142)
 gradient.valToColor(50,grMap,'rgba'); //returns rgba(223,240,245,1)
 gradient.valToColor(50,grMap,'hex'); //returns #dff0f5
 ```
-Draw out the gradient:
+Drawing the gradient:
 ```javascript
 for (var i=-50;i<150;i+=5) {
   var color = gradient.valToColor(i,grMap,'hex');
@@ -63,4 +63,26 @@ for (var i=-50;i<150;i+=5) {
 ```
 ![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex2.png)
 
+### Example 3: 8-color gradient from 0 to 1 with semi-transparent RGBA inputs
+
+Create gradient map variable:
+```javascript
+var grMap = gradient.create(
+  [-1,-0.5,-0.15,0,0.3,0.5,0.8,1],
+  ['rgba(5,0,255,1)','rgba(0,132,255,.8)','rgba(0,212,255,.6)','rgba(0,255,204,.5)','rgba(253,255,53,.4)','rgba(255,160,0,.5)','rgba(255,50,0,.8)','rgba(255,0,122,1)'],
+  'rgba'
+);
+```
+Drawing the gradient:
+```javascript
+for (var i=-1;i<1;i+=0.10) {
+  var color = gradient.valToColor(i,grMap,'rgba');
+  testdiv.innerHTML += '<div style="width:100%;background-color:' + color + '">'+
+                         '<span style="font-size:x-small">' + 
+                            'value: ' + i.toFixed(1) + ' | hex: ' + color +
+                         '</span>' + 
+                       '</div>';
+}
+```
+![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex3.png)
 

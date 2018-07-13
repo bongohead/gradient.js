@@ -72,7 +72,7 @@ for (var i=-50;i<150;i+=5) {
 ```
 ![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex2.png)
 
-### Example 3: 8-color gradient from 0 to 1 with semi-transparent RGBA inputs
+### Example 3: 8-color gradient from -1 to 1 with semi-transparent RGBA inputs
 
 Create gradient map variable:
 ```javascript

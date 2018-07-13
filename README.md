@@ -11,9 +11,9 @@ Include gradient-min.js locally or through
 # Examples
 
 ### Example 1: 2-color gradient with stops at 0 to 100
-Create gradient map and store it in grMap variable.
+First create a gradient map variable.
 
-**The first parameter of gradient.create should be an array of values where the gradient changes color (in increasing order), the second parameter the array of colors, and the third parameter the format of the colors of the previous parameter. Possible values for the third parameter include 'hex', 'rgb', and 'rgba'.**
+**The first parameter of gradient.create() should be an array of values where the gradient changes color (in increasing order), the second parameter the array of colors, and the third parameter the format of the colors of the previous parameter. Possible values for the third parameter include 'hex', 'rgb', and 'rgba'.**
 ```javascript
 var grMap = gradient.create(
   [0,100],

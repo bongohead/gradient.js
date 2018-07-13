@@ -8,10 +8,8 @@ Include gradient-min.js locally or through
 ```
 
 
-### Example 1
-<a class="jsbin-embed" href="https://jsbin.com/togipupovu/embed"> on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.4"></script>
+### Example 1 - 2-color gradient with stops at 0 to 100
 ```
-testdiv.innerHTML += '<h4>2-color gradient with stops at 0 to 100</h4>'
 //Create gradient map and store it in grMap variable
 var grMap = gradient.create(
   [0,100],
@@ -28,8 +26,9 @@ for (var i=0;i<100;i+=2) {
   var color = gradient.valToColor(i,grMap,'hex');
   testdiv.innerHTML += '<div style="width:100%;height:3px;background-color:' + color + '"></div>';
 }
-```
 
+![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex1.png)
+```
 
 ```markdown
 Syntax highlighted code block

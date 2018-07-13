@@ -4,9 +4,28 @@ You can use the [editor on GitHub](https://github.com/cye131/gradient.js/edit/ma
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Example 1
+```
+testdiv.innerHTML += '<h4>2-color gradient with stops at 0 to 100</h4>'
+//Create gradient map and store it in grMap variable
+var grMap = gradient.create(
+  [0,100],
+  ['#fff','#b3d9ff'],
+  'hex'
+);
+//Calculate colors the gradient resolves to at specific values
+testdiv.innerHTML += '<ol><li>Get the color at 0 in RGB: ' + gradient.valToColor(0,grMap,'rgb')+ '</li>' +
+                     '<li>Get the color at 50 in RGBA: ' + gradient.valToColor(50,grMap,'rgba')+ '</li>' +
+                     '<li>Get the color at 90 in Hex: ' + gradient.valToColor(50,grMap,'hex')+ '</li></ol>';
+
+testdiv.innerHTML += '<span>Draw the full gradient:</span>';
+for (var i=0;i<100;i+=2) {
+  var color = gradient.valToColor(i,grMap,'hex');
+  testdiv.innerHTML += '<div style="width:100%;height:3px;background-color:' + color + '"></div>';
+}
+```
+
 
 ```markdown
 Syntax highlighted code block

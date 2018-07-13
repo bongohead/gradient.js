@@ -1,8 +1,11 @@
-## Demo
+## Description
+This file will allow you to create gradients with unlimited color stops, and to pull colors from values within the gradient range.
 
-You can use the [editor on GitHub](https://github.com/cye131/gradient.js/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Usage
+Include gradient-min.js locally or through
+```
+  <script src="https://rawgit.com/cye131/gradient.js/master/gradient-min.js"></script>
+```
 
 
 ### Example 1

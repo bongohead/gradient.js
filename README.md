@@ -17,7 +17,7 @@ First create a gradient map variable.
 ```javascript
 var grMap = gradient.create(
   [0,100],
-  ['#fff','#b3d9ff'],
+  ['#fff','#b3d9ff'], //values at 0 will be assigned the first color, values at 100 the second color, values in between are calculated
   'hex'
 );
 ```

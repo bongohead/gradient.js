@@ -6,6 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 ### Example 1
+<a class="jsbin-embed" href="https://jsbin.com/togipupovu/embed"> on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.4"></script>
 ```
 testdiv.innerHTML += '<h4>2-color gradient with stops at 0 to 100</h4>'
 //Create gradient map and store it in grMap variable

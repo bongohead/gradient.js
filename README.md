@@ -26,9 +26,8 @@ for (var i=0;i<100;i+=2) {
   var color = gradient.valToColor(i,grMap,'hex');
   testdiv.innerHTML += '<div style="width:100%;height:3px;background-color:' + color + '"></div>';
 }
-
-![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex1.png)
 ```
+![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex1.png)
 
 ```markdown
 Syntax highlighted code block

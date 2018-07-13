@@ -106,7 +106,7 @@ var gradient = {
 		}
 		rgbArr.push(1.0);
 		
-		return joinRgba(rgbArr);
+		return this.joinRgba(rgbArr);
 	},
 	
 	hexToRgba: function(hex) {

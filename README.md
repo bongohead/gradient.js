@@ -1,15 +1,18 @@
 ## Description
 This file will allow you to create gradients with unlimited color stops, and to pull colors from values within the gradient range.
 
-### Usage
+## Usage
 Include gradient-min.js locally or through
 ```
   <script src="https://rawgit.com/cye131/gradient.js/master/gradient-min.js"></script>
 ```
 
+##Examples
 
-### Example 1 - 2-color gradient with stops at 0 to 100
-Create gradient map and store it in grMap variable. The first parameter of gradient.create should be an array of values where the gradient changes color (in increasing order), the second parameter the array of colors, and the third parameter the format of the colors of the previous parameter. Possible values for the third parameter include 'hex', 'rgb', and 'rgba'.
+### Example 1: 2-color gradient with stops at 0 to 100
+Create gradient map and store it in grMap variable.
+
+**The first parameter of gradient.create should be an array of values where the gradient changes color (in increasing order), the second parameter the array of colors, and the third parameter the format of the colors of the previous parameter. Possible values for the third parameter include 'hex', 'rgb', and 'rgba'.**
 ```
 var grMap = gradient.create(
   [0,100],
@@ -18,7 +21,7 @@ var grMap = gradient.create(
 );
 ```
 Calculate colors the gradient resolves to at specific values:
-```
+```javascript
 gradient.valToColor(0,grMap,'rgb'); //returns rgb(255,255,255)
 gradient.valToColor(50,grMap,'rgba'); //returns rgba(217,236,255,1)
 gradient.valToColor(50,grMap,'hex')'; //returns #d9ecff
@@ -32,30 +35,4 @@ for (var i=0;i<100;i+=2) {
 ```
 ![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex1.png)
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cye131/gradient.js/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

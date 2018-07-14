@@ -2,9 +2,9 @@
 [Description](#description)  
 [Usage](#usage)  
 [Examples](#examples)
-[Basic Example](###Example 1: 2-color gradient with stops at 0 to 100)  
-[Example with HTML Color Names](###Example 2: 4-color gradient from -50 to 150 using HTML color names (List of available color names from [w3schools](https://www.w3schools.com/cssref/css_colors.asp)))  
-[Example with negative gradient values and semi-transparent RGBA inputs](###Example 3: 8-color gradient from -1 to 1 with semi-transparent RGBA inputs)
+[Basic Example](#example-1-2-color-gradient-with-stops-at-0-to-100)  
+[Example with HTML Color Names](#example-2-4-color-gradient-from--50-to-150-using-html-color-names-list-of-available-color-names-from-w3schools)  
+[Example with negative gradient values and semi-transparent RGBA inputs](#example-3-8-color-gradient-from--1-to-1-with-semi-transparent-rgba-inputs)
 [Example working with SVG elements]
 
 
@@ -101,3 +101,40 @@ for (var i=-1;i<1;i+=0.10) {
 ```
 ![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex3.png)
 
+
+### Example 4: Working with SVG
+
+Create SVG diamond:
+```javascript
+  var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width','200');
+  svg.setAttribute('height','200');
+  testdiv.appendChild(svg);
+  
+  //SVG 'd' attribute for paths to create a diamond shape
+  var d0 ='M100,0 L200,100 100,200 0,100Z';
+  
+  //Define gradient
+  var grMap = gradient.create(
+    [0,10,30,40,50,70,80,90,100],     ['rgba(5,0,255,1)','rgba(0,132,255,.8)','rgba(0,212,255,.6)','rgba(0,255,204,.5)','rgba(253,255,53,.4)','rgba(255,160,0,.5)','rgba(255,50,0,.8)','rgba(255,0,122,1)','rgba(255,255,255,1)'],
+    'rgba'
+  );
+  
+  
+  //Draw SVG
+  for (var i=0;i<=100;i+=1) {
+    var color = gradient.valToColor(i,grMap,'rgba');
+    
+    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    var d = 'M100,'+i.toString()+' L'+(200-i).toString()+',100 100,'+(200-i).toString()+' '+i.toString()+',100Z';
+    console.log(d);
+    path.setAttribute('d','M100,'+i.toString()+' L'+(200-i).toString()+',100 100,'+(200-i).toString()+' ' + i + ',100Z');
+    path.setAttribute('fill',color);
+    svg.appendChild(path);
+    
+    //Add animation
+    path.innerHTML = '<animate attributeName="d" from="'+d+'" to="'+d0+'" dur="30s" fill="freeze" repeatCount="indefinite" />';
+  }
+```
+Result:
+https://cye131.github.io/gradient.js/example-images/example.html

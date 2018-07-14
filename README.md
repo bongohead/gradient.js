@@ -5,7 +5,7 @@
 [Basic Example](#example-1-2-color-gradient-with-stops-at-0-to-100)  
 [Example with HTML Color Names](#example-2-4-color-gradient-from--50-to-150-using-html-color-names-list-of-available-color-names-from-w3schools)  
 [Example with negative gradient values and semi-transparent RGBA inputs](#example-3-8-color-gradient-from--1-to-1-with-semi-transparent-rgba-inputs)
-[Example working with SVG elements]
+[Example working with SVG elements](#example-4-working-with-svg)
 
 
 # Description

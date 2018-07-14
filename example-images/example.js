@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
+    
+    var testdiv = document.getElementById('test');
+
     /**********************************************/
     testdiv.innerHTML += '<h4>2-color gradient with stops at 0 to 100</h4>'
     //Create gradient map and store it in grMap variable
@@ -18,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       testdiv.innerHTML += '<div style="width:100%;height:3px;background-color:' + color + '"></div>';
     }
     
+    
+    
     /**********************************************/
     testdiv.innerHTML += '<h4>4-color gradient from -50 to 150 using HTML color names (List of available color names from <a href="https://www.w3schools.com/cssref/css_colors.asp">w3schools</a>)</h4>'
     //Create gradient map and store it in grMap variable
@@ -35,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var color = gradient.valToColor(i,grMap,'hex');
       testdiv.innerHTML += '<div style="width:100%;height:2px;background-color:' + color + '"></div>';
     }
+    
+    
     
     /**********************************************/
     testdiv.innerHTML += '<h4>8-color gradient from 0 to 1 with semi-transparent RGBA inputs</h4>'
@@ -83,6 +90,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     
     
+    
+    
+    
     /********************************************/
     testdiv.innerHTML += '<a name="ex5"><h4>SVG Example 2</h4></a>';
     //Create SVG container
@@ -98,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       ['rgba(5,0,255,1)','rgba(0,132,255,.8)','rgba(0,212,255,.6)','rgba(0,255,204,.5)','rgba(253,255,53,.4)','rgba(255,160,0,.5)','rgba(255,50,0,.8)','rgba(255,0,122,1)','rgba(255,255,255,1)'],
       'rgba'
     );
+    
     //Draw SVG
     for (var i=0;i<=100;i+=1) {
       var color = gradient.valToColor(i,grMap,'rgba');
@@ -112,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       path.innerHTML = '<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="'+dur+'" additive="sum" repeatCount="indefinite" />';
       //Add animation
     }
+    
     var interval = setInterval(randomColors, 100);
     function randomColors() {
       var n = Math.random();

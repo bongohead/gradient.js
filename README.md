@@ -1,7 +1,7 @@
 ##### Table of Contents  
-[Description](#Description)  
-[Usage](#Usage)  
-[Examples](#Examples)
+[Description](#description)  
+[Usage](#usage)  
+[Examples](#examples)
 [Basic Example](###Example 1: 2-color gradient with stops at 0 to 100)  
 [Example with HTML Color Names](###Example 2: 4-color gradient from -50 to 150 using HTML color names (List of available color names from [w3schools](https://www.w3schools.com/cssref/css_colors.asp)))  
 [Example with negative gradient values and semi-transparent RGBA inputs](###Example 3: 8-color gradient from -1 to 1 with semi-transparent RGBA inputs)

@@ -136,4 +136,4 @@ Create SVG diamond:
   }
 ```
 Result:
-https://cye131.github.io/gradient.js/example-images/example.html
+https://cye131.github.io/gradient.js/example-images/example.html#ex4

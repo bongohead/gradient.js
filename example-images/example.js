@@ -125,7 +125,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById(n+i).setAttribute('fill',newColor);
       }
     }
-  });
 
 
 

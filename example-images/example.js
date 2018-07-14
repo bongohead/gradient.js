@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+
     /**********************************************/
     testdiv.innerHTML += '<h4>2-color gradient with stops at 0 to 100</h4>'
     //Create gradient map and store it in grMap variable
@@ -124,3 +126,7 @@
       }
     }
   });
+
+
+
+});

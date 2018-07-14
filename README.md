@@ -15,7 +15,7 @@ A vanilla JS tool to allow users to create gradients with unlimited color stops,
 # Usage
 Include gradient-min.js locally or through
 ```
-  <script src="https://rawgit.com/cye131/gradient.js/master/gradient-min.js"></script>
+  <script src="https://cye131.github.io/gradient.js/gradient-min.js"></script>
 ```
 
 

@@ -139,7 +139,7 @@ Result:
 https://cye131.github.io/gradient.js/example-images/example.html#ex4
 
 
-### Example 4: Another SVG Example
+### Example 5: Another SVG Example
 ```
   //Create SVG container
   var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');

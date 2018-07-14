@@ -1,5 +1,5 @@
 # Description
-A vanilla JS tool to allow users to create gradients with unlimited color stops, and to pull colors from values within the gradient range.
+A vanilla JS tool to allow users to create gradients with unlimited color stops, and to pull colors from values within the gradient range. Especially useful for dynamically assigning datapoint-specific colors when working with JS dataviz tools.
 
 # Usage
 Include gradient-min.js locally or through

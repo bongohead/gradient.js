@@ -15,7 +15,7 @@ A vanilla JS tool to allow users to create gradients with unlimited color stops,
 # Usage
 Include gradient-min.js locally or through
 ```
-  <script src="https://cye131.github.io/gradient.js/gradient-min.js"></script>
+  <script src="https://cmefi.github.io/gradient.js/gradient-min.js"></script>
 ```
 
 
@@ -50,7 +50,7 @@ for (var i=0;i<100;i+=2) {
   testdiv.innerHTML += '<div style="width:100%;height:3px;background-color:' + color + '"></div>';
 }
 ```
-![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex1.png)
+![alt text](https://raw.githubusercontent.com/cmefi/gradient.js/master/example-images/ex1.png)
 
 ---
 
@@ -77,7 +77,7 @@ for (var i=-50;i<150;i+=5) {
   testdiv.innerHTML += '<div style="width:100%;height:2px;background-color:' + color + '"></div>';
 }
 ```
-![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex2.png)
+![alt text](https://raw.githubusercontent.com/cmefi/gradient.js/master/example-images/ex2.png)
 
 ### Example 3: 8-color gradient from -1 to 1 with semi-transparent RGBA inputs
 
@@ -100,7 +100,7 @@ for (var i=-1;i<1;i+=0.10) {
                        '</div>';
 }
 ```
-![alt text](https://raw.githubusercontent.com/cye131/gradient.js/master/example-images/ex3.png)
+![alt text](https://raw.githubusercontent.com/cmefi/gradient.js/master/example-images/ex3.png)
 
 
 ### Example 4: Working with SVG
@@ -138,7 +138,7 @@ Create SVG diamond:
   }
 ```
 Result:  
-https://cye131.github.io/gradient.js/example-images/example.html#ex4
+https://cmefi.github.io/gradient.js/example-images/example.html#ex4
 
 
 ### Example 5: Another SVG Example
@@ -196,4 +196,4 @@ https://cye131.github.io/gradient.js/example-images/example.html#ex4
 ```
 
 Result:  
-https://cye131.github.io/gradient.js/example-images/example.html#ex5
+https://cmefi.github.io/gradient.js/example-images/example.html#ex5
